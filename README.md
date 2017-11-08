@@ -1,2 +1,1 @@
-
-This projects i n
+This is arepository for C++ Prime Exercises!
