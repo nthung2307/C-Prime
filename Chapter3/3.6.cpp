@@ -11,6 +11,6 @@ int main()
   cout << "Enter an automobile gasoline consumption in European style (l/100km): ";
   cin >> consumption;
   cout << consumption << " l/100km = ";
-  cout << (100 * GALLON_TO_LITER) / (consumption * 100 / KM_TO_MILE)  << " mpg in US style\n";
+  cout << (KM_TO_MILE * GALLON_TO_LITER) / consumption  << " mpg in US style\n";
   return 0;
 }
