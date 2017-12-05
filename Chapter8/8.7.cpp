@@ -69,7 +69,7 @@ template <class T>
 T Sum(T arr[], int n)
 {
   T sum = arr[0];
-  for (int i = 0; i < n; i++)
+  for (int i = 1; i < n; i++)
     sum += arr[i];
   return sum;
 }
@@ -78,7 +78,7 @@ template <class T>
 T Sum(T * arr[], int n)
 {
   T sum = *arr[0];
-  for (int i = 0; i < n; i++)
+  for (int i = 1; i < n; i++)
     sum += *arr[i];
   return sum;
 }

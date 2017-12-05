@@ -1,1 +1,1 @@
-This is arepository for C++ Prime Exercises!
+This is a repository for C++ Prime Exercises!
