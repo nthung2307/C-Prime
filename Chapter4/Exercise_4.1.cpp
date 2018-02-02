@@ -1,10 +1,9 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 int main()
 {
+  using namespace std;
   string first_name, last_name;
   char grade;
   int age;

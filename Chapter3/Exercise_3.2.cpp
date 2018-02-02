@@ -30,4 +30,3 @@ double calculate_BMI(double feet, double inches, double weight)
   weight = weight/POUND_TO_KG;
   return weight/pow(height,2);
 }
-
