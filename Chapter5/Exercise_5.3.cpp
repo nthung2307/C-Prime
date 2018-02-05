@@ -10,8 +10,10 @@ int main()
   dalphe_invest = cleo_invest = 100;
   dalphe_interest = 0.1;
   cleo_interest = 0.05;
-  cout << "Dalphe invests $" << dalphe_invest << " at " << dalphe_interest << " simple interest.\n";
-  cout << "Cleo invests $" << cleo_invest << " at " << cleo_interest << " compound interest.\n";
+  cout << "Dalphe invests $" << dalphe_invest 
+       << " at " << dalphe_interest << " simple interest.\n";
+  cout << "Cleo invests $" << cleo_invest 
+       << " at " << cleo_interest << " compound interest.\n";
   while (dalphe_invest >= cleo_invest)
   {
     dalphe_invest += 100 * dalphe_interest;

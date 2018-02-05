@@ -18,6 +18,8 @@ int main()
   sum = 0;
   for (int i = first_number; i <= second_number; i++)
     sum += i;
-  cout << "The sum of all the integers from " << first_number << " to " << second_number << ": " << sum << endl;
+  cout << "The sum of all the integers from " 
+       << first_number << " to " 
+       << second_number << ": " << sum << endl;
   return 0;
 }
