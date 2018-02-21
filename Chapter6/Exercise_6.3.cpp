@@ -33,10 +33,8 @@ int main()
       case 'G':
 	game();
 	break;
-      default:
-	cout << "Please enter a c, p, t, or g: ";
-	break;
     }
+    cout << "Please enter a c, p, t, or g:\n";
     cin >> ch;
   }  
   return 0;
@@ -45,8 +43,8 @@ int main()
 void show_menu()
 {
   cout << "Please enter one of the following choices:\n";
-  cout << "c) carnivore		p) pianist\n";
-  cout << "t) tree		g) game\n";
+  cout << "c) carnivore		\tp) pianist\n";
+  cout << "t) tree 		\tg) game\n";
   cout << "q) quit\n";
 }
 

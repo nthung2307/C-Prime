@@ -39,17 +39,24 @@ int main()
     }
   }
   cin.get();
+  int grand_patrol = 0;
   cout << "Grand Patrol\n";
   for (int i = 0; i < size; i++)
   {
     if (contrib[i].amount >= 10000)
+    {
       cout << contrib[i].name << " donated $" << contrib[i].amount << "\n";
+      grand_patrol++;
+    }
   }
-  cout << "Patrol\n";
-  for (int i = 0; i < size; i++)
+  if (grand_patrol < size)
   {
-    if (contrib[i].amount < 10000)
-      cout << contrib[i].name << " donated $" << contrib[i].amount << "\n";
+    cout << "Patrol\n";
+    for (int i = 0; i < size; i++)
+    {
+      if (contrib[i].amount < 10000)
+        cout << contrib[i].name << " donated $" << contrib[i].amount << "\n";
+    }
   }
   delete [] contrib;
   return 0;

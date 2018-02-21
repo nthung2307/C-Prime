@@ -1,14 +1,14 @@
 #include <iostream>
-#include <string>
 #include <cctype>
 
+const int strsize = 20;
 using namespace std;
 
 struct BOP
 {
-  string fullname;
-  string title;
-  string bopname;
+  char fullname[strsize];
+  char title[strsize];
+  char bopname[strsize];
   int preference;
 };
 
@@ -57,14 +57,17 @@ int main()
         }
       }      
     }
+    cout << "Next choice: ";
   } while (choice != 'Q' && choice != 'q');
+  cout << "Bye!\n";
   return 0;
 }
 
 void show_menu()
 {
   cout << "Benevolent Order of Programmers Report:\n";
-  cout << "a. display by name 		b. display by title\n";
-  cout << "c. display by bopname  	d. display by preference\n";
+  cout << "a. display by name \tb. display by title\n";
+  cout << "c. display by bopname \td. display by preference\n";
   cout << "q. quit\n";
+  cout << "Enter your choice: ";
 }
