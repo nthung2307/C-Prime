@@ -1,23 +1,23 @@
 #include <iostream>
 
-void first_function();
-void second_function();
+void mice();
+void run();
 
 int main()
 {
-  first_function();
-  first_function();
-  second_function();
-  second_function();
+  mice();
+  mice();
+  run();
+  run();
   return 0;
 }
 
-void first_function()
+void mice()
 {
   std::cout << "Three blind mice.\n";
 }
 
-void second_function()
+void run()
 {
   std::cout << "See how they run.\n";
 }

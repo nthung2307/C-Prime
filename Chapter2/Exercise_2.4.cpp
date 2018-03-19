@@ -8,7 +8,8 @@ int main()
   double temperature;
   cout << "Please enter a Celsius value: ";
   cin >> temperature;
-  cout << temperature << " degrees Celsius is " << convert(temperature) << " degress Fahrenheit.\n";
+  cout << temperature << " degrees Celsius is " 
+       << convert(temperature) << " degress Fahrenheit.\n";
   return 0;
 }
 
